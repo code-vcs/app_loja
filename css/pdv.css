@@ -1,0 +1,192 @@
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+ul.atalhos li{
+    display: block;
+    font-size: 8pt;
+}
+
+section{
+    display: flex;
+    justify-content: baseline;
+}
+
+form{
+    padding: 5px;
+    padding-bottom: 20px;
+    /* background: rgb(236, 230, 230); */
+}
+
+span.logo-text{
+    margin-left: 20px;
+    color: #007bff;
+    font-size: 15pt;
+    text-shadow: 1px 1px 2px rgb(190, 190, 190);
+}
+button:hover{
+    outline: none;
+    border: none;
+    color: blue;
+}
+.fa-search{
+    outline: none;
+    border: none;
+    font-size: 15pt;
+    color: #14539a;
+    background: none;
+}
+.fa-search:focus{
+    cursor: progress;
+    outline: none;
+}
+
+label{
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+input{
+    font-size:12pt;
+    border: 1px solid lightgrey;
+    padding:8px;
+    color: green;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+input#ref{
+    width: 200px;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(255, 68, 68);
+    text-shadow: 1px 2px 2px black;
+    
+}
+input#ref::placeholder{
+    text-shadow: none;
+}
+input#nm-prod{
+    width: 515px;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    font-size: 10pt;
+    padding:10px;
+}
+
+div.container-total{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+input.total{
+    /* display: flex; */
+    width: 100%;
+    height: 50px;
+    /* direction: rtl; */
+    /* justify-content: flex-start; */
+    text-align: end;
+    font-size: 20pt;
+    color: rgb(255, 196, 0);
+    background: rgb(0, 0, 0);
+    text-shadow: 1px 2px 2px rgb(255, 166, 0);
+}
+
+/* descricao */
+
+div.descricao{
+    position: absolute;
+    width: 98vmin;
+    height: 520px;
+    border: 1px solid rgb(224, 224, 224);
+    border-style: outset;
+    margin-left: 725px;
+    margin-top: -40px;
+    padding: 10px;
+    overflow: auto;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+
+}
+
+div.container-descricao{
+    width: 100%;
+    height: auto;
+    font-size: 10pt;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 5px solid rgb(0, 167, 6);
+    background: rgb(238, 255, 199);
+    border-radius: 10px;
+    
+}
+
+.fa-print{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 4px;
+    width: 90px;
+    height: 35px;
+    border: none;
+    color: grey;
+}
+
+
+#btFifalizarPedlido{
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+section.container-pagamento{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+div.container-select{
+    display: flex;
+ 
+}
+
+select#form-pagamento{
+    outline: none;
+    width: 260px;
+    height: auto;
+    padding: 10px;
+}
+select{
+    -webkit-appearance: none;
+    background-color: rgb(240, 233, 233);
+    color: rgb(3, 71, 92);
+}
+
+div.valor-pagamento{
+    font-size: 30pt;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+
+#btConfirmar-pedido{
+    margin-left:50px;
+}
+@media (min-width:1000px){
+    img{
+        width: 50px;
+    }
+}

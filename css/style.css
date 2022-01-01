@@ -1,0 +1,144 @@
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+section{
+    position:fixed;
+    width:100%;
+    height:100%;
+    margin: 0 auto;
+    margin-top: 2px;
+    padding: 10px;
+    border-radius: 15px;
+}
+section div.border-1{
+    -webkit-app-region:drag;
+    width: 100%;
+    height: 25px;
+    text-align: end;
+    padding-right: 10px;
+    background: rgb(0, 0, 0);
+    color: white;
+}
+span#bt_close{
+    color: white;
+    text-align: center;
+    -webkit-app-region:none;
+}
+
+div.container-button-controler{
+    display: none;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background: rgb(118, 118, 118);
+    border-radius: 12px;
+    margin-block: 10px;
+}
+div.container-button-controler button{
+    width: 9vmax;
+    height: auto;
+    font-size: 12pt;
+    padding: 5px;
+    text-align: center;
+    border: none;
+    cursor:pointer;
+    color: rgb(24, 24, 24);
+    background: rgb(255, 255, 255);
+    padding:10px;
+    border-radius: 8px;
+}
+div.container-button-controler button:hover{
+    color: rgb(24, 22, 22);
+    /* font-weight: bolder; */
+    background: rgb(184, 255, 248);
+}
+div.container-button-controler button:focus{
+    outline: none;
+    cursor: progress;
+}
+
+
+main.container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+main input, button:focus{
+    outline: none;
+}
+
+main input{
+    padding: 5px;
+    border: 1px solid lightgrey;
+}
+.btn-primary{
+    height: 35px;
+}
+iframe{
+    display: none;
+    width: 100%;
+    height: 595px;
+    padding: 25px;
+    border:none;
+    background: rgb(255, 255, 255);
+    /* overflow: scroll; */
+}
+
+
+/*  */
+
+div.container-log{
+    display: flex;
+    justify-content: center;
+   background:transparent;
+}
+div.row-log input{
+    display: block;
+    width: 390px;
+    outline: none;
+    margin: 20px;
+    padding: 10px;
+    border:1px solid lightgrey;
+}
+#btLogar{
+    width: 100px;
+    text-align: center;
+    margin-left: 20px;
+    border: none;
+}
+
+div.container-cadastrar{
+    display: none;
+}
+div.container-cadastrar{
+    /* display: flex; */
+    justify-content: center;
+    padding: 40px;
+    border-radius: 12px;
+    /* bottom: 0; */
+    background-color: rgb(216, 216, 216);
+    
+}
+div.row-cadastrar input{
+    outline: none;
+    border: 1px solid lightgrey;
+    padding: 10px;
+}
+input#senha-adm{
+    outline: none;
+    padding: 8px;
+    font-size: 15pt;
+    text-align: center;
+    color: red;
+}
+input#senha-adm::placeholder{
+    font-size: 10pt;
+}

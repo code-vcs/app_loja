@@ -1,0 +1,31 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+label{
+    font-size: 12pt;
+    color: grey;
+}
+
+section div label input{ 
+    display: block;
+    border: 1px solid lightgrey;
+}
+
+input:focus{
+    outline: none;
+    text-align: center;
+}
+input::placeholder{
+    font-size: 10pt;
+    padding-left: 10px;
+}

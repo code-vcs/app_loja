@@ -1,0 +1,81 @@
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+input{
+    outline: none;
+    text-align: center;
+    border: none;
+    width: 50%;
+    height: 30px;
+    font-size: 8pt;
+    background: lightgrey;
+}
+button:focus{
+    outline: none;
+}
+
+button.btn-warning{
+    width: 100px;
+    font-size: 10pt;
+    margin-left: -15px;
+    margin-bottom: 12px;
+}
+
+tr th.thAplicacao{
+    width: 200px;
+}
+
+
+
+header{
+    width: 100%;
+    height: auto;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+}
+nav{
+    display: flex;
+}
+
+nav ul li  img{
+    width: 120px;
+    margin-right: 20px;
+}
+
+/* nav div.container{
+    display: flex;
+} */
+
+table{
+    /* width: 200px; */
+    background: rgb(255, 255, 255);
+}
+tr th{
+    font-size: 10pt;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+    color: white;
+    background: black;
+
+}
+/* tbody{
+    display: block;
+} */
+tr td{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 10pt;
+    padding: 0px;
+}
+
+.thProduto{
+    width: 485px;
+}

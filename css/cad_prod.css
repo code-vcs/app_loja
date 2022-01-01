@@ -1,0 +1,65 @@
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+div.container-atalho{
+    position: absolute;
+    }
+    ul.atalhos li{
+        display: block;
+        font-size: 8pt;
+    }
+    
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    padding: 5px;
+    padding-bottom: 20px;
+    /* background: rgb(236, 230, 230); */
+}
+h4{
+    color: #007bff;
+    font-size: 15pt;
+    text-shadow: 1px 1px 2px rgb(190, 190, 190);
+}
+label{
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+input{
+    font-size: 14pt;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: rgb(20, 106, 163);
+    border: 1px solid lightgrey;
+    padding:8px;
+    border-radius: 8px;
+}
+
+input#nm-prod{
+    width: 500px;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    font-size: 10pt;
+    padding:10px;
+}
+
+select{
+    display: flex;
+    outline: none;
+    direction: rtl;
+}

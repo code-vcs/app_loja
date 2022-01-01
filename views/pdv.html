@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sistema | 1.0.1 </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/fc56a37a95.js"></script>
+    <link rel="stylesheet" href="../css/pdv.css">
+</head>
+
+<body>
+
+    <!-- <div class="container-atalho">
+        <ul class="atalhos">
+            <li>F5 --Refresh</li>
+            <li>F7 --Desconto %</li>
+            <li>F8 --Limpar Campos</li>
+          
+        </ul>
+    </div> -->
+
+    <img src="../img/pdv.png" style="width: 60px;" alt=""><span class="logo-text">PDV</span>
+    <section>
+        <div class="container-form">
+            <form action="">
+                <!-- <hr> -->
+                <div class="descricao">
+                    <span style="color: lightgrey;">Descrição</span>
+
+
+                </div>
+                <label
+                    for="">Ref:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="search" id="ref" name="cod-produto" placeholder="Codigo ex: 0001" list="lstr">
+                    <datalist id="lstr">
+
+                    </datalist>
+                </label>&nbsp;
+                <button type="button" id="btConsultar" class="fa fa-search fa-2x"></button>
+
+                <br>
+                <label for="">Cod_Barra: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="search" id="cod-barra" name="cod-produto" placeholder="Codigo ex: 0001">
+                </label><br>
+                <label for="">Nome_Produto:&nbsp;
+                    <input type="search" id="nm-prod" name="cod-produto" placeholder="Codigo ex: 0001" list="listar"
+                        required>&nbsp;&nbsp;<button type="button" id="btConsultarProduto"
+                        class="fa fa-search fa-2x"></button><br>
+
+                    <datalist id="listar">
+
+                    </datalist>
+
+                </label><br>
+                <label for="">Quant:
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" id="quant" name="cod-produto" placeholder="Codigo ex: 0001" required>
+                </label><br>
+
+                <label for="">Val_Vend: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="search" id="val-vend" name="cod-produto" placeholder="Codigo ex: 0001" required>
+                </label>
+                <br>
+                <hr>
+                <label for="">Desc:
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="search" id="val-desc" name="val-desc" placeholder="Desc %" disabled=true>
+                </label>
+                <button type="button" id="btDesc" class="btn btn-danger" disabled=true>Desc %</button>
+                <button type="button" id="btConfCompra" class="btn btn-success">Confirmar Produto</button>
+               
+                <br>
+                <span id="percent"></span>
+                <hr>
+                <p style="position: absolute;margin-left: 15px;margin-top: 10px;color: rgb(185, 185, 185);">Total da
+                    Compra</p>
+                <div class="container-total">
+                    <input type="button" value='0.00' class="total">
+                </div>
+            
+                <button class="btn btn-primary" id="btFifalizarPedlido">Finalizar Pedido</button>
+            </form>
+        </div>
+    </section>
+
+    <h3 class="pagar">Finalizar Pedido</h3>
+    <section class="container-pagamento">
+        <br><br>
+        <div class="container-select">
+            <div class="row-select">
+                <p style="font-size: 20pt;">Forma de Pagamento</p>
+                <select name="" id="form-pagamento">
+                    <optgroup label="Selecione a forma de pagamento">
+                        <option value="dinheiro">DINHEIRO</option>
+                        <option value="debito">DEBITO</option>
+                        <option value="credito">CREDITO</option>
+                        <option value="boleto">BOLETO</option>
+                        <option value="pix">PIX</option>
+                        <option value="2">CRED 2X S/J</option>
+                        <option value="3">CRED 3X S/J</option>
+                        <option value="4">CRED 4X S/J</option>
+                        <option value="5">CRED 5X S/J</option>
+                        <option value="6">CRED 6X S/J</option>
+                        <option value="7">CRED 7X S/J</option>
+                        <option value="8">CRED 8X S/J</option>
+                        <option value="9">CRED 9X S/J</option>
+                        <option value="10">CRED 10X S/J</option>
+                        <option value="11">CRED 11X S/J</option>
+                        <option value="12">CRED 12X S/J</option>
+                    </optgroup>
+                    <optgroup label="Parcelamento acima de 12X"></optgroup>
+                    <option value="acima-de-12">ACIMA DE 12</option>
+                    <option value="outro">OUTRO</option>
+                </select>
+                <div class="valor-pagamento">
+                    
+                </div>
+                <br>
+                <div class="container-confirmar"> 
+                    <buton class="btn btn-success" id="btConfirmar-pedido">Confirmar Compra</button>
+                    </div>
+                    <img src="../img/maquininha.png" style="width: 250px;" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="../src/pdv.js"></script>
+</body>
+
+</html>

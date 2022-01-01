@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sistema | 1.0.1 </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/fc56a37a95.js"></script>
+    <link rel="stylesheet" href="../css/cad_prod.css">
+</head>
+
+<body>
+    <div class="container-atalho">
+        <ul class="atalhos">
+            <li>F5 --Refresh</li>
+            <li>F7 --Desconto %</li>
+            <li>F8 --Limpar Campos</li>
+            <li><b><br><img src="../img/ic_0.png" width="200" alt=""></b></li>
+        </ul>
+    </div>
+
+    <section>
+        <div class="container-form">
+            <form action="">
+                <h4>Cadastro de Produtos</h4>
+                <hr>
+                <label for="">Nome_Produto:
+                    <input type="search" id="nm-prod" name="cod-produto" placeholder="Codigo ex: 0001">
+                </label><br>
+                <label for="">Cod_Barra:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="search" id="cod-barra" name="cod-produto" placeholder="Codigo ex: 0001">
+                </label><br>
+                <label for="">Ref:
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="search" id="ref" name="cod-produto" placeholder="Codigo ex: 0001">
+                </label>
+                <span>Cor: </span>
+                <input type="color" value="black" list="colors" />
+                <datalist id="colors">
+                    <option>red</option>
+                    <option>yellow</option>
+                    <option>pink</option>
+                    <option>green</option>
+                    <option>orange</option>
+                </datalist><br>
+                <label for="">Quant:
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" id="quant" name="cod-produto" placeholder="Codigo ex: 0001">
+                </label><br>
+                <label for="">Val_Comp: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="search" id="val-comp" name="cod-produto" placeholder="Codigo ex: 0001">
+                </label>
+                <label for="">Val_Vend:
+                    <input type="search" id="val-vend" name="cod-produto" placeholder="Codigo ex: 0001">
+                </label>
+                <br>
+                <hr>
+                <p>Descrição da embalegem:</p>
+             
+                <select name="seletor" id="seletor">
+                    <optgroup label="Tipo de Produto">
+                        <option value="UN">UN</option>
+                        <option value="KG">KG</option>
+                        <option value="ML">ML</option>
+                        <option value="LT">LT</option>
+                        <option value="PC">PC</option>
+                        <option value="CX">CX</option>
+                        <option value="MT">MT</option>
+                        <option value="OUTROS">OUTROS</option>
+                    </optgroup>
+                </select>
+                <br>
+                <button type="button" id="btcadastrar" class="btn btn-primary">Cadastrar Produto</button>
+                <hr>
+            </form>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="../src/cad_prod.js"></script>
+</body>
+
+</html>
