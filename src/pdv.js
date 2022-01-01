@@ -83,9 +83,6 @@ document.querySelector('#btConfCompra').addEventListener('click', () => {
     let calc = quant * valComp;
     let calTot = tot = tot + calc
 
-    // let calDesc = calc - desc;
-    // let aplicarDesc = tot = tot - (desc + 0)
-
     if (inp[0].value == "" || inp[2].value == "" || inp[3].value == "" || inp[4].value == "") {
         alert("campos obrigatorios não preenchido !");
     } else {
